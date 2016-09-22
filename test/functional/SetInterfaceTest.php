@@ -18,7 +18,7 @@ class SetInterfaceTest extends \Xpmock\TestCase
      */
     public function createInstance()
     {
-        $mock = $this->mock('Dhii\Set\SetInterface')
+        $mock = $this->mock('Dhii\\Set\\SetInterface')
                 ->add()
                 ->remove()
                 ->has()
@@ -37,6 +37,6 @@ class SetInterfaceTest extends \Xpmock\TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf('Dhii\Set\SetInterface', $subject, 'Subject is not a valid set');
+        $this->assertInstanceOf('Dhii\\Set\\SetInterface', $subject, 'Subject is not a valid set');
     }
 }

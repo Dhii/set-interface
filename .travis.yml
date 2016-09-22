@@ -13,3 +13,10 @@ before_script:
 
 script:
   - phpunit
+
+after_script:
+    - vendor/bin/test-reporter --coverage-report="test/coverage/clover.xml"
+
+addons:
+    code_climate:
+        repo_token: 103461564a5a970a3b5b28ae8fa6a6893a7bfcc23649bc045a890119e924dee4

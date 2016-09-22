@@ -1,11 +1,13 @@
 <?php
 
+namespace Dhii\Set;
+
 /**
  * Something that can act as a set.
  *
  * @since [*next-version*]
  */
-interface SetInterface extends Collection\CollectionInterface
+interface SetInterface
 {
     /**
      * Adds an item to this set.
